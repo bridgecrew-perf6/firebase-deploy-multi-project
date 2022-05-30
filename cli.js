@@ -26,7 +26,7 @@ const { argv } = yargs.usage('Usage: $0 <command> [options]').options({
 const deploy = async () => {
   try {
     const cliParams = [
-      { param: '--project', hasValue: true },
+      { param: '--alias', hasValue: true },
       { param: '--only', hasValue: true },
       { param: '--token', hasValue: true }
     ]
