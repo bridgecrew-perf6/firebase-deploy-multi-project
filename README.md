@@ -8,7 +8,7 @@ A simple node program for execute firebase deploy using a specif project alias b
 
 
 ## Configuration Guide
-You can see how firebase use alias strategy on this link: (https://firebase.google.com/docs/cli#project_aliases)[https://firebase.google.com/docs/cli#project_aliases]
+You can see how firebase use alias strategy on this link: https://firebase.google.com/docs/cli#project_aliases
 
 
 ## What this package does
