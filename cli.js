@@ -4,8 +4,8 @@ const { execCommand } = require('dots-env')
 const yargs = require('yargs')
 
 const { argv } = yargs.usage('Usage: $0 <command> [options]').options({
-  project: {
-    default: 'alias',
+  alias: {
+    default: '',
     demandOption: false,
     describe: 'Project alias',
     nargs: 1
@@ -31,8 +31,11 @@ const deploy = async () => {
       { param: '--token', hasValue: true }
     ]
 
-    await execCommand('firebase use --clear', {}, cliParams)
-    await execCommand(`firebase use ${ argv.project }`, {}, cliParams)
+    if (argv.alias) {
+      await execCommand('firebase use --clear', {}, cliParams)
+      await execCommand(`firebase use ${ argv.alias }`, {}, cliParams)
+    }
+
     await execCommand('firebase deploy', {}, cliParams)
   } catch (err) {
     console.error('Error on firebase deploy', err)
