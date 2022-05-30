@@ -34,7 +34,7 @@ const deploy = async () => {
       await execCommand(`firebase use ${ argv.alias }`, {}, cliParams)
     }
 
-    await execCommand('firebase deploy', {}, cliParams)
+    await execCommand('firebase deploy')
   } catch (err) {
     console.error('Error on firebase deploy', err)
     throw (err)
