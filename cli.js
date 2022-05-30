@@ -5,8 +5,7 @@ const yargs = require('yargs')
 
 const { argv } = yargs.usage('Usage: $0 <command> [options]').options({
   project: {
-    alias: 'p',
-    default: 'project',
+    default: 'alias',
     demandOption: false,
     describe: 'Project alias',
     nargs: 1

@@ -26,7 +26,7 @@ $ firebase deploy
 Usage: _ [options] <command> [...args]
 
 Arguments:
-  -p, --project [string]          Set the project alias to use (default: development)
+  --alias [string]                Set the project alias to use (default: development)
   --only [string]                 Set what service you want to deploy (firestore, functions, storage...)
   --token [string]                Set the firebase deploy token
 ```
