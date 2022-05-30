@@ -1,6 +1,6 @@
 { 
   "name": "firebase-deploy-multi-project",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "bin": {
     "firebase-deploy-multi-project": "cli.js"
